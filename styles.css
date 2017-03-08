@@ -1,0 +1,102 @@
+body {
+	background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #7ACA79;
+}
+#main {
+    width: 30%;
+    height: 50%;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto; /*centers element*/
+    color: #fff;
+    text-align: center;
+    
+}
+
+#second {
+    
+}
+
+#second {
+    width: 100%; height: 100%;
+    /*background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #7ACA79 50%, black 50%);
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    transition: background-position 1s;*/
+}
+
+#second:hover {
+    background-position: 0 -100%;
+}
+
+
+
+
+h1 {
+    font-size: 3em;
+    font-family: 'Lora', serif;
+    transition: all .5s ease;
+}
+
+h1:hover {
+    transform: scale(1.5);
+}
+
+p {
+    font-family: 'ABeeZee';
+    font-variant: small-caps;
+}
+
+
+.buttons {
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+}
+
+#minus {
+    height: 5em;
+    width: 5em;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    border: 0px;
+    transition: box-shadow .5s ease;
+
+    
+    
+}
+
+#plus {
+    height: 5em;
+    width: 5em;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    border: 0px;
+    transition: box-shadow .5s ease;
+    margin-bottom: 1em;
+    
+
+}
+button:hover {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
+    
+}
+
+button:active {
+    transform: scale(.97);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, .1);
+}
+
