@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="messinaroundmarch1" content="buttons..maybe">
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "styles.css" />
+  <style>
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Libre+Baskerville|Lora');
+</style>
+  <title>Moodz</title>
+  </head>
+  <body id="hi">
+      
+      
+ <div id="second">
+      
+      </div>
+      
+      
+      <div id="main">
+    
+   
+      
+      <div class="content">
+          <h1>Header</h1>
+    </div>
+    
+    <div class="buttons">
+        
+        
+
+        <button id="plus" onclick="increaseColor()">+</button>
+        <button id="minus" onclick="decreaseColor()">-</button>    
+      </div>
+    
+    
+      
+</div> 
+      
+      
+      
+      <script>
+          
+        /*  function randomize() {
+  document.getElementById('hi').style.backgroundColor = randomColors();
+}
+
+function randomColors() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+
+*/
+          
+          var colors = ['#569532', '#467B26', '#36611D', '#68AE3E', '#79C84B', '#267158', '#164A39', '#1D5E49', '#2F8569', '#399879', '#9C344C', '#D24F6D', '#B7415C', '#81283D', '#661E2F', '#AA5F39', '#E58655', '#C77247', '#8D4D2C', '#6F3B21'];
+          
+          var playlists = ['Shhhh', 'Mhmmmm', 'Dark Blue', 'Dreamin', 'Muted, Ye', 'Mellows', 'Feels', 'Terminally Chill', 'Steadied', 'Schemin', 'Elevated', 'Groovin', 'Vibes for Weeks', 'Stir the Pot', 'Up & Away', 'Blurred', 'Head Dancin', 'Twist the Knife', 'Wooooo'];
+          
+          var currentPlaylist = 0;
+          
+          function increaseColor() {
+              
+        currentPlaylist++;
+        document.getElementById('hi').style.backgroundColor = colors[currentPlaylist];  
+           }
+          
+          function decreaseColor() {
+              currentPlaylist--;
+        document.getElementById('hi').style.backgroundColor = colors[currentPlaylist];
+          }
+          
+          
+          
+          
+      </script>
+      
+      
+  </body>
+</html>
