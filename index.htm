@@ -3,7 +3,9 @@
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="messinaroundmarch1" content="buttons..maybe">
+
+  <meta name="Moods" content="An interactive site to help you find music that fits your mood.">
+
   <link rel = "stylesheet"
    type = "text/css"
    href = "styles.css" />
@@ -25,15 +27,19 @@
    
       
       <div class="content">
-          <h1>Header</h1>
+
+        <h1 id="playlist"></h1>
+
     </div>
     
     <div class="buttons">
         
         
 
-        <button id="plus" onclick="increaseColor()">+</button>
-        <button id="minus" onclick="decreaseColor()">-</button>    
+
+        <button id="plus" onclick="goUp()">+</button>
+        <button id="minus" onclick="goDown()">-</button>    
+
       </div>
     
     
@@ -44,36 +50,72 @@
       
       <script>
           
-        /*  function randomize() {
-  document.getElementById('hi').style.backgroundColor = randomColors();
-}
 
-function randomColors() {
-  return '#' + Math.floor(Math.random() * 16777215).toString(16);
-}
+          var colors = ['#569532', '#467B26', '#36611D', '#68AE3E', '#79C84B', '#267158', '#164A39', '#1D5E49', '#2F8569', '#399879', '#9C344C', '#D24F6D', '#B7415C', '#81283D', '#661E2F', '#AA5F39', '#E58655', '#C77247', '#8D4D2C'];
 
-*/
-          
-          var colors = ['#569532', '#467B26', '#36611D', '#68AE3E', '#79C84B', '#267158', '#164A39', '#1D5E49', '#2F8569', '#399879', '#9C344C', '#D24F6D', '#B7415C', '#81283D', '#661E2F', '#AA5F39', '#E58655', '#C77247', '#8D4D2C', '#6F3B21'];
           
           var playlists = ['Shhhh', 'Mhmmmm', 'Dark Blue', 'Dreamin', 'Muted, Ye', 'Mellows', 'Feels', 'Terminally Chill', 'Steadied', 'Schemin', 'Elevated', 'Groovin', 'Vibes for Weeks', 'Stir the Pot', 'Up & Away', 'Blurred', 'Head Dancin', 'Twist the Knife', 'Wooooo'];
           
           var currentPlaylist = 0;
+
+          var currentColor = 0;
           
           function increaseColor() {
+
+            currentColor++;
+            document.getElementById('hi').style.backgroundColor = colors[currentColor];
               
-        currentPlaylist++;
-        document.getElementById('hi').style.backgroundColor = colors[currentPlaylist];  
+            if (currentColor == colors.length - 1) {
+                decreaseColor();
+	}    
+        
            }
           
           function decreaseColor() {
-              currentPlaylist--;
-        document.getElementById('hi').style.backgroundColor = colors[currentPlaylist];
+            
+            currentColor--;
+            document.getElementById('hi').style.backgroundColor = colors[currentColor];
+            
+            if (currentColor == 0) {
+                increaseColor();
+            }
+          
           }
           
+          function increasePlaylist() {
+              
+  	        currentPlaylist++;       
+  	        var playlistName = document.getElementById('playlist');
+  	        playlistName.innerHTML = playlists[currentPlaylist];
+	
+	// if undefined, return currentPlaylist to the previous value
+            if (currentPlaylist > playlists.length - 1) {
+   	            decreasePlaylist();
+	}        
+}
           
+          function decreasePlaylist() {
+  	         currentPlaylist--;       
+  	         var playlistName = document.getElementById('playlist');
+  	         playlistName.innerHTML = playlists[currentPlaylist];
+	
+	// if undefined, return currentPlaylist to the previous value
+  	         if (currentPlaylist < 0) {
+   	            increasePlaylist();
+	}        
+}
           
+          function goUp() {
+              increaseColor();
+              increasePlaylist();
+          }
           
+          function goDown() {
+              decreaseColor();
+              decreasePlaylist();
+          }
+             
+
       </script>
       
       
