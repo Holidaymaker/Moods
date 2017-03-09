@@ -1,113 +1,29 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Moods" content="An interactive site to help you find music that fits your mood.">
-  <link rel = "stylesheet"
-   type = "text/css"
-   href = "styles.css" />
+  <meta name="Moods"
+    content="An interactive site to help you find music that fits your mood.">
+  <link rel="stylesheet", type="text/css", href="styles.css"/>
   <style>
-@import url('https://fonts.googleapis.com/css?family=ABeeZee|Libre+Baskerville|Lora');
-</style>
+    @import url(
+      'https://fonts.googleapis.com/css?family=ABeeZee|Libre+Baskerville|Lora');
+  </style>
   <title>Moodz</title>
-  </head>
-  <body id="hi">
-      
-      
- <div id="second">
-      
-      </div>
-      
-      
-      <div id="main">
-    
-   
-      
-      <div class="content">
-          <h1 id="playlist"></h1>
+</head>
+<body id="hi">
+  <div id="second">
+  </div>
+  <div id="main">
+    <div class="content">
+        <h1 id="playlist"></h1>
     </div>
-    
     <div class="buttons">
-        
-        
-
-        <button id="plus" onclick="goUp()">+</button>
-        <button id="minus" onclick="goDown()">-</button>    
-      </div>
-    
-    
-      
-</div> 
-      
-      
-      
-      <script>
-          
-          var colors = ['#426C99', '#FFADA9', '#0D3556', '#7A1941', '#ADB7C1', '#DB413F', '#E7D4FF', '#154A25', '#FFFCE9', '#340054', '#FFE766', '#2C2A2D', '#F9FA57', '#71777F', '#EA4900', '#AEB88D', '#76FFCB', '#CC1500', '#FF0086'];
-          
-          var playlists = ['Shhhh', 'Mhmmmm', 'Dark Blue', 'Dreamin', 'Muted, Ye', 'Mellows', 'Feels', 'Terminally Chill', 'Steadied', 'Schemin', 'Elevated', 'Groovin', 'Vibes for Weeks', 'Stir the Pot', 'Up & Away', 'Blurred', 'Head Dancin', 'Twist the Knife', 'Wooooo'];
-          
-          var currentPlaylist = 0;
-          var currentColor = 0;
-          
-          function increaseColor() {
-
-            currentColor++;
-            document.getElementById('hi').style.backgroundColor = colors[currentColor];
-              
-            if (currentColor > colors.length - 1) {
-                decreaseColor();
-	}    
-        
-           }
-          
-          function decreaseColor() {
-            
-            currentColor--;
-            document.getElementById('hi').style.backgroundColor = colors[currentColor];
-            
-            if (currentColor < 0) {
-                increaseColor();
-            }
-          
-          }
-          
-          function increasePlaylist() {
-              
-  	        currentPlaylist++;       
-  	        var playlistName = document.getElementById('playlist');
-  	        playlistName.innerHTML = playlists[currentPlaylist];
-	
-	// if undefined, return currentPlaylist to the previous value
-            if (currentPlaylist > playlists.length - 1) {
-   	            decreasePlaylist();
-	}        
-}
-          
-          function decreasePlaylist() {
-  	         currentPlaylist--;       
-  	         var playlistName = document.getElementById('playlist');
-  	         playlistName.innerHTML = playlists[currentPlaylist];
-	
-	// if undefined, return currentPlaylist to the previous value
-  	         if (currentPlaylist < 0) {
-   	            increasePlaylist();
-	}        
-}
-          
-          function goUp() {
-              increaseColor();
-              increasePlaylist();
-          }
-          
-          function goDown() {
-              decreaseColor();
-              decreasePlaylist();
-          }
-             
-      </script>
-      
-      
-  </body>
+      <button id="plus" onclick="incrementPlaylist(1)">+</button>
+      <button id="minus" onclick="incrementPlaylist(-1)">-</button>
+    </div>
+  </div>
+  <script src="moods.js"></script>
+</body>
 </html>
