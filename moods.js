@@ -48,6 +48,8 @@ function incrementPlaylist(number) {
 }
 
 function setPlaylist() {
-  document.getElementById('playlist').innerHTML = moods[currentPlaylist];
-  document.getElementById('hi').style.backgroundColor = moods[currentPlaylist];
+  document.getElementById('playlist').innerHTML =
+    moods[currentPlaylist].playlistName;
+  document.getElementById('hi').style.backgroundColor =
+    moods[currentPlaylist].color;
 }
