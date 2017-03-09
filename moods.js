@@ -32,6 +32,7 @@ var wooooo = new Playlist('Wooooo', '#FF0086');
 var moods = [shhhh, mhmmmm, darkBlue, dreamin, mutedYe, mellows, feels,
             terminallyChill, steadied, schemin, elevated, groovin, vibesForWeeks
             stirThePot, upAndAway, blurred, headDancin, twistTheKnife, wooooo];
+setPlaylist();
 
 // increments the playlist up or down based on the magnitude of number
 function incrementPlaylist(number) {
@@ -43,8 +44,10 @@ function incrementPlaylist(number) {
   } else if (currentPlaylist >= moods.length){
     currentPlaylist = moods.length - 1;
   }
+  setPlaylist();
+}
 
-  // sets new playlist title and color 
+function setPlaylist() {
   document.getElementById('playlist').innerHTML = moods[currentPlaylist];
   document.getElementById('hi').style.backgroundColor = moods[currentPlaylist];
 }
