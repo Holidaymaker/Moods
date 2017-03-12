@@ -1,5 +1,5 @@
 // gives starting point of moods array (0-18 available)
-var currentPlaylist = 0;
+var currentPlaylist = 12;
 
 // Playlist constructor function, determines properties of playlist objects
 function Playlist(playlistName, color) {
@@ -30,9 +30,16 @@ var wooooo = new Playlist('Wooooo', '#FF0086');
 
 // initializes moods array of Playlist objects
 var moods = [shhhh, mhmmmm, darkBlue, dreamin, mutedYe, mellows, feels,
-            terminallyChill, steadied, schemin, elevated, groovin, vibesForWeeks
+            terminallyChill, steadied, schemin, elevated, groovin, vibesForWeeks,
             stirThePot, upAndAway, blurred, headDancin, twistTheKnife, wooooo];
+
+// initializes first playlist
 setPlaylist();
+
+var plusButton = document.getElementById("plus");
+var minusButton = document.getElementById("minus");
+plusButton.addEventListener("click", function() { incrementPlaylist(1); });
+minusButton.addEventListener("click", function() { incrementPlaylist(-1); });
 
 // increments the playlist up or down based on the magnitude of number
 function incrementPlaylist(number) {
