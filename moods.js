@@ -159,9 +159,9 @@ function setPlaylist() {
   // sets the playlist text
   document.getElementById('playlist').innerHTML =
     moods[currentPlaylist].playlistName;
-  // sets the backgroundColor
-  document.getElementById('hi').style.backgroundColor =
-    moods[currentPlaylist].color;
+  // sets the backgroundColor | Matt, commenting this out so the jQuery below can do its thang.
+  // document.getElementById('hi').style.backgroundColor =
+  // moods[currentPlaylist].color;
 
   // sets song & creates <audio> element if it doesn't already exist
   var songPlayer = document.getElementById('songPlayer');
