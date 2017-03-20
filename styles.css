@@ -13,10 +13,12 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
     margin: auto; /*centers element*/
-    color: #fff;
     text-align: center;
+    border: 5px solid white;
     
 }
 
@@ -42,12 +44,15 @@ body {
 
 h1 {
     font-size: 3em;
-    font-family: 'Lora', serif;
-    transition: all .5s ease;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    transition: all .5s .05s ease;
+    letter-spacing: 2px;
+    perspective: 700px;
 }
 
 h1:hover {
-    transform: scale(1.5);
+    letter-spacing: 10px;
 }
 
 p {
@@ -61,37 +66,37 @@ p {
     text-align: center;
     margin: auto;
     padding: 1em;
+    font-family: 'playfair display', serif;
+    align-items: center;
 }
 
-#minus {
-    height: 5em;
-    width: 5em;
-    border-radius: 50px;
-    background-color: #fff;
-    color: #000;
+#plus, #minus {
+    height: 2.5em;
+    width: 8em;
+    border-radius: 3px;
+    background-color: #474747;
+    color: #fff;
     font-size: 16px;
-    border: 0px;
-    transition: box-shadow .5s ease;
-
-    
-    
-}
-
-#plus {
-    height: 5em;
-    width: 5em;
-    border-radius: 50px;
-    background-color: #fff;
-    color: #000;
-    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center; 
     border: 0px;
     transition: box-shadow .5s ease;
     margin-bottom: 1em;
     
+    transition: all .3s .05s ease-in-out;
+    
 
 }
-button:hover {
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
+#plus:hover, #minus:hover {
+    letter-spacing: 5px;
+    background-color: #63f9a4;
+    color: #000;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
+    font-weight: bolder;
+    font-variant: small-caps;
+
     
 }
 
@@ -99,4 +104,6 @@ button:active {
     transform: scale(.97);
     box-shadow: 0px 0px 0px rgba(0, 0, 0, .1);
 }
+
+
 
