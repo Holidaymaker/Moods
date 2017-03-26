@@ -1,17 +1,15 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<!--Logistical Stuff-->
-    <meta charset="utf-8">
+<!--Logistical Stuff-->   
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Moods"
     content="An interactive site to help you find music that fits your mood.">
-  <title>Moodz</title>
 <!--Our Stylesheets-->
   <link rel="stylesheet", type="text/css", href="styles.css"/>
-  <link rel="stylesheet", type="text/css", href="individualmoods.css"/>
-<!--Getting jQuery-->
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+<!--Getting jQuery-->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!--Getting fonts-->
@@ -19,18 +17,23 @@
     @import url(
       'https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400,600,700,800');
   </style>
+  <title>Moodz</title>
 </head>
-
 <body id="hi">
   <div id="second">
   </div>
   <div id="main">
-    <div class="content">
+      <div class="content">
         <h1 id="playlist"></h1>
+          <!--Background SVG-->
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1934 1133"><defs><style>.cls-1{fill:#0bd1e0;}.cls-2{fill:#19f481;}</style></defs><title>Artboard 1</title><path class="cls-1" d="M155.89,4.23V-73.43c0-12.87-20-12.89-20,0V70.71A9.4,9.4,0,0,0,138,77V1172.16c0,12.87,20,12.89,20,0V10.47A9.4,9.4,0,0,0,155.89,4.23Z"/><path class="cls-1" d="M452.13,279.38v785.21c0,12.87,20,12.89,20,0V279.38C472.13,266.51,452.13,266.49,452.13,279.38Z"/><path class="cls-1" d="M678,434.27V972.09c0,12.87,20,12.89,20,0V434.27C698,421.4,678,421.38,678,434.27Z"/><path class="cls-1" d="M787.72-258.44V903.25c0,12.87,20,12.89,20,0V-258.44C807.72-271.31,787.72-271.33,787.72-258.44Z"/><path class="cls-1" d="M914.65,184.72V406.3c0,12.87,20,12.89,20,0V184.72C934.65,171.85,914.65,171.83,914.65,184.72Z"/><path class="cls-1" d="M1039.42,386.94V935.52c0,12.87,20,12.89,20,0V386.94C1059.42,374.07,1039.42,374,1039.42,386.94Z"/><path class="cls-1" d="M931.86,709.63v507.7c0,12.87,20,12.89,20,0V709.63C951.86,696.76,931.86,696.74,931.86,709.63Z"/><path class="cls-1" d="M1254.55,610.68v492.64c0,12.87,20,12.89,20,0V610.68C1274.55,597.81,1254.55,597.78,1254.55,610.68Z"/><path class="cls-1" d="M1415.89-84.18V795.68c0,12.87,20,12.89,20,0V-84.18C1435.89-97.05,1415.89-97.08,1415.89-84.18Z"/><path class="cls-1" d="M1340.6,427.82V1068.9c0,12.87,20,12.89,20,0V427.82C1360.6,415,1340.6,414.93,1340.6,427.82Z"/><path class="cls-1" d="M1691.26,393.4v716.37c0,12.87,20,12.89,20,0V393.4C1711.26,380.53,1691.26,380.51,1691.26,393.4Z"/><path class="cls-1" d="M1770.85,21.23v520.6c0,12.87,20,12.89,20,0V21.23C1790.85,8.36,1770.85,8.34,1770.85,21.23Z"/><path class="cls-1" d="M1641.78-28.25V100.82c0,12.87,20,12.89,20,0V-28.25C1661.78-41.12,1641.78-41.14,1641.78-28.25Z"/><path class="cls-1" d="M1521.31-17.5V559c0,12.87,20,12.89,20,0V-17.5C1541.31-30.36,1521.31-30.39,1521.31-17.5Z"/><circle class="cls-2" cx="544" cy="93" r="57"/><circle class="cls-2" cx="728" cy="175" r="57"/><circle class="cls-2" cx="688" cy="356" r="57"/><circle class="cls-2" cx="1198" cy="328" r="57"/><circle class="cls-2" cx="1493" cy="167" r="57"/><circle class="cls-2" cx="1719" cy="299" r="57"/></svg>
     </div>
     <div class="buttons">
       <button id="plus">up</button>
       <button id="minus">down</button>
+      <a id ="spotifyLink" href="https://play.spotify.com/user/1225101838/playlist/6tsGco49f1TGkgrUbNrtZz">
+          <button id="spotify">view playlist</button>
+      </a>
     </div>
   </div>
   <script src="moods.js"></script>
