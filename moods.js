@@ -18,10 +18,18 @@ setPlaylist();
 
 var plusButton = document.getElementById("plus");
 var minusButton = document.getElementById("minus");
+var spotifyLinkButton = document.getElementById("spotify");
 //var shuffleSongButton = document.getElementById("shuffleSong");
+
 plusButton.addEventListener("click", function() { incrementPlaylist(1); });
 minusButton.addEventListener("click", function() { incrementPlaylist(-1); });
 //shuffleSongButton.addEventListener("click", function() { nextSong(); });
+
+// opens Spotify playlist
+spotifyLinkButton.addEventListener("click", function() {
+  var win = window.open(moods[currentPlaylist].playlistURL, '_blank');
+  win.focus();
+});
 
 // increases the songNumber
 function nextSong() {
