@@ -33,7 +33,7 @@ var mutedYe = new Playlist(
 );
 var mellows = new Playlist(
     'Mellows',
-    [starsKeepCalling],
+    [starsKeepCalling, noDestruction],
     "https://play.spotify.com/user/1225101838/playlist/3cvUawxH5mPK8V5YDgs9vv"
 );
 var feels = new Playlist(
@@ -48,7 +48,7 @@ var terminallyChill = new Playlist(
 );
 var steadied = new Playlist(
     'Steadied',
-    [herMajesty, boeZaah, noDestruction],
+    [herMajesty, boeZaah],
     "https://play.spotify.com/user/1225101838/playlist/1w6hlLnRvGTxYzjyDUwAX3"
 );
 var schemin = new Playlist(
