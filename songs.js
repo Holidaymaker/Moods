@@ -61,6 +61,11 @@ var starsKeepCalling = new Song(
   'The Stars Keep on Calling My Name',
   "https://p.scdn.co/mp3-preview/91418fe5a85506cd6bc145e850d73a21585ac2bd?cid=null"
 );
+var noDestruction = new Song(
+  'Foxygen',
+  'No Destruction',
+  'Previews/Foxygen_NoDestruction.wav'
+);
 
 // feels
 var theseDays = new Song(
@@ -86,11 +91,6 @@ var boeZaah = new Song(
   'Mac Demarco',
   'Boe Zaah',
   'Previews/MacDemarco_BoeZaah.wav'
-);
-var noDestruction = new Song(
-  'Foxygen',
-  'No Destruction',
-  'Previews/Foxygen_NoDestruction.wav'
 );
 
 // schemin
