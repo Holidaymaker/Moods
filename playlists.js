@@ -28,7 +28,7 @@ var dreamin = new Playlist(
 );
 var mutedYe = new Playlist(
     'Muted, Ye',
-    [hiking],
+    [hiking, feelItAllAround, sunKing, reallyLove, starsKeepCalling],
     "https://play.spotify.com/user/1225101838/playlist/2frW4RaubHbVlPJ41qTDx9"
 );
 var mellows = new Playlist(
@@ -48,22 +48,23 @@ var terminallyChill = new Playlist(
 );
 var steadied = new Playlist(
     'Steadied',
-    [herMajesty],
+    [herMajesty, boeZaah, noDestruction],
     "https://play.spotify.com/user/1225101838/playlist/1w6hlLnRvGTxYzjyDUwAX3"
 );
 var schemin = new Playlist(
     'Schemin',
-    [rainySouls],
+    [rainySouls, rightThere, wevalIntro, hilarityDuff, nangs, weekend,
+      massageSituation],
     "https://play.spotify.com/user/1225101838/playlist/70yfzw4kIL4vmVT3XbApwz"
 );
 var elevated = new Playlist(
     'Elevated',
-    [noSass],
+    [noSass, feelsGiraf, weightless, zodiacShit],
     "https://play.spotify.com/user/1225101838/playlist/7h6JG4j25QwotuZiUm4kxA"
 );
 var groovin = new Playlist(
     'Groovin',
-    [already],
+    [already, supplier],
     "https://play.spotify.com/user/1225101838/playlist/7H2JGSkIe3f8Qjt31aHnUF"
 );
 var vibesForWeeks = new Playlist(
@@ -73,7 +74,7 @@ var vibesForWeeks = new Playlist(
 );
 var stirThePot = new Playlist(
     'Stir the Pot',
-    [excuseMe],
+    [excuseMe, artificialDeath],
     "https://play.spotify.com/user/1225101838/playlist/3NxYrfTGESu3DnTfOWC4Kg"
 );
 var upAndAway = new Playlist(
