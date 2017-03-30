@@ -5,7 +5,6 @@ var moods = [shhhh, mhmmmm, darkBlue, dreamin, mutedYe, mellows, feels,
 
 // gives starting point of moods array (0-18 available)
 var currentPlaylist = 12; //vibesForWeeks
-
 /*
 * index of song being played
 * resets to 0 for each playlist
@@ -13,20 +12,23 @@ var currentPlaylist = 12; //vibesForWeeks
 */
 var songNumber = 0;
 
-// initializes first playlist
-setPlaylist();
+// creates <audio> element
+var songPlayer = document.createElement('audio');
+document.body.appendChild(songPlayer);
+songPlayer.id = 'songPlayer';
+songPlayer.loop = true;
+
+setPlaylist(); // initializes first playlist
 
 var plusButton = document.getElementById("plus");
 var minusButton = document.getElementById("minus");
 var spotifyLinkButton = document.getElementById("spotify");
-//var shuffleSongButton = document.getElementById("shuffleSong");
+var nextSongButton = document.getElementById("nextSong");
 
 plusButton.addEventListener("click", function() { incrementPlaylist(1); });
 minusButton.addEventListener("click", function() { incrementPlaylist(-1); });
-//shuffleSongButton.addEventListener("click", function() { nextSong(); });
-
-// opens Spotify playlist
-spotifyLinkButton.addEventListener("click", function() {
+nextSongButton.addEventListener("click", function() { nextSong(); });
+spotifyLinkButton.addEventListener("click", function() { // opens Spotify playlist
   var win = window.open(moods[currentPlaylist].playlistURL, '_blank');
   win.focus();
 });
@@ -52,32 +54,21 @@ function incrementPlaylist(incrementAmount) {
     currentPlaylist = moods.length - 1;
     return;
   }
-  //
-
+  songNumber = 0;
   // changes HTML to match current playlist
   setPlaylist();
 }
 
 function setPlaylist() {
-  songNumber = 0;
   // sets the playlist text
   document.getElementById('playlist').innerHTML =
     moods[currentPlaylist].playlistName;
-
-  // sets song & creates <audio> element if it doesn't already exist
-  var songPlayer = document.getElementById('songPlayer');
-  if (!songPlayer) {
-    var songPlayer = document.createElement('audio');
-    document.body.appendChild(songPlayer);
-    songPlayer.id = 'songPlayer';
-    songPlayer.loop = true;
-    setSong(songPlayer);
-  } else {
-    setSong(songPlayer);
-  }
+    // sets song to play
+    setSong();
 }
 
-function setSong(songPlayer) {
+// plays the new song preview
+function setSong() {
   songPlayer.src = moods[currentPlaylist].songList[songNumber].songSource;
   songPlayer.load();
   songPlayer.addEventListener("canplay",
@@ -85,32 +76,3 @@ function setSong(songPlayer) {
       songPlayer.play();
     }, true);
 }
-
-/* function shufflePlaylist(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-  return array;
-}
-*/
-
-/*
-$( "#plus, #minus" ).on('click', function() {
-  $( "#hi" ).animate({
-    color: moods[currentPlaylist].textColor,
-    backgroundColor: moods[currentPlaylist].color,
-    transition: ".3s ease-in-out"
-  });
-});
-*/
