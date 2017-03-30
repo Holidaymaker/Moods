@@ -39,6 +39,21 @@ var hiking = new Song(
   'Hiking',
   "https://p.scdn.co/mp3-preview/c19c90cb21dc0edf5543348d1e8ad3c5a4ed531d?cid=null"
 );
+var feelItAllAround = new Song(
+  'Washed Out',
+  'Feel It All Around',
+  'Previews/WashedOut_FeelItAllAround.wav'
+);
+var sunKing = new Song(
+  'The Beatles',
+  'Sun King',
+  'Previews/TheBeatles_SunKing_Remastered.wav'
+);
+var reallyLove = new Song(
+  "D'Angelo",
+  'Really Love',
+  "Previews/D'Angelo_ReallyLove.wav"
+);
 
 // mellows
 var starsKeepCalling = new Song(
@@ -67,33 +82,93 @@ var herMajesty = new Song(
   'Her Majesty',
   "https://p.scdn.co/mp3-preview/23e262b75073c3dfe735527eaf4aa91eb2e48f2f?cid=null"
 );
+var boeZaah = new Song(
+  'Mac Demarco',
+  'Boe Zaah',
+  'Previews/MacDemarco_BoeZaah.wav'
+);
+var noDestruction = new Song(
+  'Foxygen',
+  'No Destruction',
+  'Previews/Foxygen_NoDestruction.wav'
+);
 
 // schemin
 var rainySouls = new Song(
   'Clap! Clap!',
   'Rainy Souls, Gloomy Futures',
-  "https://p.scdn.co/mp3-preview/bcb6a652933539b91b47c5551a0c8896a0eb2566?cid=null"
+  'Previews/ClapClap_RainySoulsGloomyFutures.wav'
+);
+var rightThere = new Song(
+  'Anderson Paak',
+  'Right There',
+  'Previews/AndersonPaak_RightThere.wav'
+);
+var wevalIntro = new Song(
+  'Weval',
+  'Intro',
+  'Previews/Weval_Intro.wav'
+);
+var hilarityDuff = new Song(
+  'KAYTRANADA',
+  'Hilarity Duff',
+  'Previews/KAYTRANADA_HilarityDuff.wav'
+);
+var nangs = new Song(
+  'Tame Impala',
+  'Nangs',
+  'Previews/TameImpala_Nangs.wav'
+);
+var weekend = new Song(
+  'Flume',
+  'Weekend',
+  'Previews/FlumeMosesSumney_Weekend.wav'
+);
+var massageSituation = new Song(
+  'Flying Lotus',
+  'Massage Situation',
+  'Previews/FlyingLotus_MassageSituation.wav'
 );
 
 // elevated
 var noSass = new Song(
   'Photay',
   'No Sass',
-  "https://p.scdn.co/mp3-preview/8b34046d4cf974f84ccc69e6ba5c1d511b8bed53?cid=null"
+  'Previews/Photay_NoSass.wav'
+);
+var feelsGiraf = new Song(
+  'Giraffage',
+  'Feels',
+  'Previews/Giraffage_Feels.wav'
+);
+var weightless = new Song(
+  'Vaski, Beak Nasty',
+  'Weightless',
+  'Previews/VaskiBeakNasty_Weightless.wav'
+);
+var zodiacShit = new Song(
+  'Flying Lotus',
+  'Zodiac Shit',
+  'Previews/FlyingLotus_ZodiacShit.wav'
 );
 
 // groovin
 var already = new Song(
-  'Already',
   'Anderson .Paak',
-  "https://p.scdn.co/mp3-preview/dba20eb4e3d3a6dfb8100f607011b988865a5e9d?cid=null"
+  'Already',
+  "Previews/AndersonPaakSiR_Already.wav"
+);
+var supplier = new Song(
+  'Freddie Gibbs, Madlib',
+  'Supplier',
+  'Previews/FreddieGibbsMadlib_Supplier.wav'
 );
 
 // vibesForWeeks
 var deadbeatSummer = new Song(
   'Neon Indian',
   'Deadbeat Summer',
-  "https://p.scdn.co/mp3-preview/427de3ae88745dc35ee9e6737bd10b209b4f5699?cid=null"
+  'Previews/NeonIndian_DeadbeatSummer.wav'
 );
 
 // stirThePot
@@ -101,6 +176,11 @@ var excuseMe = new Song(
   'A$AP Rocky',
   'Excuse Me',
   "https://p.scdn.co/mp3-preview/587c3681aac2da9736c18e055bbc4afb6d5ee268?cid=null"
+);
+var artificialDeath = new Song(
+  'Death Grips',
+  'Artificial Death in the West',
+  'Previews/DeathGrips_ArtificialDeathInTheWest.wav'
 );
 
 // upAndAway
