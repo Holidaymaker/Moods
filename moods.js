@@ -65,6 +65,7 @@ function setPlaylist() {
     moods[currentPlaylist].playlistName;
     // sets song to play
     setSong();
+    setClass();
 }
 
 // plays the new song preview
@@ -75,4 +76,9 @@ function setSong() {
     function() {
       songPlayer.play();
     }, true);
+}
+
+function setClass() {
+    document.getElementById('hi').className =
+    moods[currentPlaylist].cssClass;
 }
