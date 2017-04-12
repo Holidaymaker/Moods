@@ -80,17 +80,52 @@ var huey = new Song(
   'Huey',
   "https://p.scdn.co/mp3-preview/f88070ca609d798e3ce1dce89c036c5a4f8ed910?cid=null"
 );
+var superRichKids = new Song(
+  'Frank Ocean',
+  'Super Rich Kids',
+  'Previews/FrankOcean,EarlSweatshirt_SuperRichKids.wav'
+);
+var khadijah = new Song(
+  'NxWorries',
+  'Khadijah',
+  'Previews/NxWorries_Khadijah.wav'
+);
+var secretXtians = new Song(
+  'Unknown Mortal Orchestra',
+  'Secret Xtians',
+  'Previews/UnknownMortalOrchestra_SecretXtians.wav'
+);
+var busRide = new Song(
+  'KAYTRANADA, Karriem Riggins',
+  'BUS RIDE',
+  'Previews/KAYTRANADA,KarriemRiggins,RiverTiber_BUSRIDE.wav'
+);
 
 // steadied
-var herMajesty = new Song(
-  'The Beatles',
-  'Her Majesty',
-  "https://p.scdn.co/mp3-preview/23e262b75073c3dfe735527eaf4aa91eb2e48f2f?cid=null"
-);
 var boeZaah = new Song(
   'Mac Demarco',
   'Boe Zaah',
   'Previews/MacDemarco_BoeZaah.wav'
+);
+var theyNever = new Song(
+  'Spoon',
+  'They Never Got You',
+  'Previews/Spoon_TheyNeverGotYou.wav'
+);
+var ultimatePainting = new Song(
+  'Ultimate Painting',
+  'Ultimate Painting',
+  'Previews/UltimatePainting_UltimatePainting.wav'
+);
+var doneWithYou = new Song(
+  'The Whitest Boys Alive',
+  'Done With You',
+  'Previews/TheWhitestBoyAlive_DoneWithYou.wav'
+);
+var bees = new Song(
+  'Caribou',
+  'Bees',
+  'Previews/Caribou_Bees.wav'
 );
 
 // schemin
@@ -130,7 +165,7 @@ var massageSituation = new Song(
   'Previews/FlyingLotus_MassageSituation.wav'
 );
 
-// elevated
+// elevatedx
 var noSass = new Song(
   'Photay',
   'No Sass',
@@ -163,6 +198,21 @@ var supplier = new Song(
   'Supplier',
   'Previews/FreddieGibbsMadlib_Supplier.wav'
 );
+var stayinAlive = new Song(
+  'Bee Gees',
+  "Stayin' Alive",
+  "Previews/BeeGees_Stayin'Alive.wav"
+);
+var whereImFrom = new Song(
+  'Digable Planet',
+  "Where I'm From",
+  "Previews/DigablePlanets_WhereI'mFrom.wav"
+);
+var feelLikeIDo = new Song(
+  'Disclosure, Al Green',
+  "Feel Like I Do",
+  "Previews/Disclosure,AlGreen_FeelLikeIDo.wav"
+);
 
 // vibesForWeeks
 var deadbeatSummer = new Song(
@@ -170,45 +220,150 @@ var deadbeatSummer = new Song(
   'Deadbeat Summer',
   'Previews/NeonIndian_DeadbeatSummer.wav'
 );
+var girlsJustWant = new Song(
+  'STRFKR',
+  'Girls Just Want To Have Fun',
+  'Previews/STRFKR_GirlsJustWantToHaveFun.wav'
+);
+var lowRider = new Song(
+  'War',
+  'Low Rider',
+  'Previews/War_LowRider.wav'
+);
 
 // stirThePot
 var excuseMe = new Song(
   'A$AP Rocky',
   'Excuse Me',
-  "https://p.scdn.co/mp3-preview/587c3681aac2da9736c18e055bbc4afb6d5ee268?cid=null"
+  'Previews/A$APRocky_ExcuseMe.wav'
 );
 var artificialDeath = new Song(
   'Death Grips',
   'Artificial Death in the West',
   'Previews/DeathGrips_ArtificialDeathInTheWest.wav'
 );
+var melaninDrop = new Song(
+  'Cities Aviv',
+  'Melanin Drop',
+  'Previews/CitiesAviv_MelaninDrop.wav'
+);
+var freePress = new Song(
+  'Shabazz Palaces',
+  'free press and curl',
+  'Previews/ShabazzPalaces_freepressandcurl.wav'
+);
+var bowlingTrophies = new Song(
+  'Foxygen',
+  'Bowling Trophies',
+  'Previews/Foxygen_BowlingTrophies.wav'
+);
 
 // upAndAway
 var cousins = new Song(
   'Vampire Weekend',
   'Cousins',
-  "https://p.scdn.co/mp3-preview/bed57f48e889e0142408187ceaadb0036b13cc56?cid=null"
+  'Previews/VampireWeekend_Cousins.wav'
+);
+var borrowedTime = new Song(
+  'Parquet Courts',
+  'Borrowed Time',
+  'Previews/ParquetCourts_BorrowedTime.wav'
+);
+var pickles = new Song(
+  'Courtney Barnett',
+  'Pickles from the Jar',
+  'Previews/CourtneyBarnett_PicklesfromtheJar.wav'
+);
+var europeanSon = new Song(
+  'The Velvet Underground',
+  'European Son',
+  'Previews/TheVelvetUndergroundNico_EuropeanSon.wav'
+);
+var tombstoneBlues = new Song(
+  'Bob Dylan',
+  'Tombstone Blues',
+  'Previews/BobDylan_TombstoneBlues.wav'
 );
 
 // blurred
 var brokeup = new Song(
   'Arca',
   'Brokeup',
-  "https://p.scdn.co/mp3-preview/90351beb3a2c4cd26bb65eb8b9db96fbdb4cb14f?cid=null"
+  'Previews/Arca_Brokeup.wav'
+);
+var whateverIWant = new Song(
+  'Death Grips',
+  'Whatever I Want',
+  "Previews/DeathGrips_WhateverIWant.wav"
+);
+var fight = new Song(
+  'Nicolas Jaar',
+  'Fight',
+  'Previews/NicolasJaar_Fight.wav'
+);
+var kitchenSink = new Song(
+  'Amon Tobin',
+  'Kitchen Sink',
+  'Previews/AmonTobin_KitchenSink.wav'
+);
+var daooooh = new Song(
+  'Karriem Riggins',
+  'daooooh!!',
+  'Previews/KarriemRiggins_daooooh!!.wav'
 );
 
 // headDancin
 var liteSpots = new Song(
   'KAYTRANADA',
   'LITE SPOTS',
-  "https://p.scdn.co/mp3-preview/654e7c82ae94db23940cc2452a03dab8d1605f6b?cid=null"
+  "Previews/KAYTRANADA_LITESPOTS.wav"
+);
+var syko = new Song(
+  'Kenton Slash Demon',
+  'Syko',
+  'Previews/KentonSlashDemon_Syko.wav'
+);
+var fourteenDrops = new Song(
+  'Makeness',
+  '14 Drops',
+  'Previews/Makeness_14Drops.wav'
+);
+var stonecutters = new Song(
+  'Flying Lotus',
+  'Stonecutters',
+  'Previews/FlyingLotus_Stonecutters.wav'
+);
+var arpOne = new Song(
+  'Jackson And His Computer Band',
+  'Arp #1',
+  'Previews/JacksonAndHisComputerBand_Arp#1.wav'
 );
 
 // twistTheKnife
 var youMightThink = new Song(
   'Death Grips',
   'You Might Think He Loves You for Your Money but I Know What He Really Loves You for It’s Your Brand New Leopard Skin Pillbox Hat',
-  "https://p.scdn.co/mp3-preview/1d7b2d3f3202cd0cfc84962e25fa1e8b42e13512?cid=null"
+  'Previews/DeathGrips_YouMightThink.wav'
+);
+var blockbusterNight = new Song(
+  'Run the Jewels',
+  'Blockbuster Night Part I',
+  'Previews/RunTheJewels_BlockbusterNightPart1.wav'
+);
+var twentyWave = new Song(
+  'Earl Sweatshirt',
+  '20 Wave Caps',
+  'Previews/RunTheJewels_BlockbusterNightPart1.wav'
+);
+var numbasOnTheBoards = new Song(
+  'Pusha T',
+  'Numbas on the Boards',
+  'Previews/PushaT_NumbersOnTheBoards.wav'
+);
+var wallF = new Song(
+  'Flume',
+  'Wall F*ck',
+  'Previews/Flume_WallFuck.waxv'
 );
 
 // wooooo
