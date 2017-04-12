@@ -23,17 +23,17 @@ var darkBlue = new Playlist(
 );
 var dreamin = new Playlist(
     'Dreamin',
-    [introCosmicDrama],
+    [introCosmicDrama, swampIsOn, softTrees, conta, dd5],
     "https://play.spotify.com/user/1225101838/playlist/5tDsc9fYFWSmfdWMFeErVv"
 );
 var mutedYe = new Playlist(
     'Muted, Ye',
-    [hiking, feelItAllAround, sunKing, reallyLove, starsKeepCalling],
+    [brother, babe, hiking, theBird, park],
     "https://play.spotify.com/user/1225101838/playlist/2frW4RaubHbVlPJ41qTDx9"
 );
 var mellows = new Playlist(
     'Mellows',
-    [starsKeepCalling, noDestruction],
+    [noDestruction, sonnet, pinkWhite, overTheOcean, blueBoy],
     "https://play.spotify.com/user/1225101838/playlist/3cvUawxH5mPK8V5YDgs9vv"
 );
 var feels = new Playlist(
@@ -43,12 +43,12 @@ var feels = new Playlist(
 );
 var terminallyChill = new Playlist(
     'Terminally Chill',
-    [huey],
+    [huey, khadijah, secretXtians, busRide],
     "https://play.spotify.com/user/1225101838/playlist/3ywVIrKgnzDW5QNbklinFM"
 );
 var steadied = new Playlist(
     'Steadied',
-    [herMajesty, boeZaah],
+    [bees, boeZaah, theyNever, ultimatePainting, doneWithYou],
     "https://play.spotify.com/user/1225101838/playlist/1w6hlLnRvGTxYzjyDUwAX3"
 );
 var schemin = new Playlist(
@@ -59,42 +59,42 @@ var schemin = new Playlist(
 );
 var elevated = new Playlist(
     'Elevated',
-    [noSass, feelsGiraf, weightless, zodiacShit],
+    [zodiacShit, noSass, weightless, feelsGiraf],
     "https://play.spotify.com/user/1225101838/playlist/7h6JG4j25QwotuZiUm4kxA"
 );
 var groovin = new Playlist(
     'Groovin',
-    [already, supplier],
+    [already, stayinAlive, whereImFrom, feelLikeIDo, supplier],
     "https://play.spotify.com/user/1225101838/playlist/7H2JGSkIe3f8Qjt31aHnUF"
 );
 var vibesForWeeks = new Playlist(
     'Vibes for Weeks',
-    [deadbeatSummer],
+    [deadbeatSummer, girlsJustWant, lowRider],
     "https://play.spotify.com/user/1225101838/playlist/6tsGco49f1TGkgrUbNrtZz"
 );
 var stirThePot = new Playlist(
     'Stir the Pot',
-    [excuseMe, artificialDeath],
+    [excuseMe, melaninDrop, artificialDeath, freePress, bowlingTrophies],
     "https://play.spotify.com/user/1225101838/playlist/3NxYrfTGESu3DnTfOWC4Kg"
 );
 var upAndAway = new Playlist(
     'Up & Away',
-    [cousins],
+    [cousins, pickles, europeanSon, borrowedTime, tombstoneBlues],
     "https://play.spotify.com/user/1225101838/playlist/1qVSR1cBf0O68ftEV55ZV7"
 );
 var blurred = new Playlist(
     'Blurred',
-    [brokeup],
+    [brokeup, fight, whateverIWant, kitchenSink, daooooh],
     "https://play.spotify.com/user/1225101838/playlist/3FllHOyay1CvFAuAUKAlTh"
 );
 var headDancin = new Playlist(
     'Head Dancin',
-    [liteSpots],
+    [fourteenDrops, liteSpots, syko, arpOne, stonecutters],
     "https://play.spotify.com/user/1225101838/playlist/0wnBjKJ7jydQuydf4S7ftf"
 );
 var twistTheKnife = new Playlist(
     'Twist the Knife',
-    [youMightThink],
+    [youMightThink, blockbusterNight, numbasOnTheBoards, wallF, twentyWave],
     "https://play.spotify.com/user/1225101838/playlist/5YsHC2XQdbYjGIiKYj28ag"
 );
 var wooooo = new Playlist(
