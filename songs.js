@@ -30,41 +30,81 @@ var spiritFuture = new Song(
 var introCosmicDrama = new Song(
   'Flying Lotus',
   'Intro//A Cosmic Drama',
-  "https://p.scdn.co/mp3-preview/4f6855ecaf57d2d955e1445c1661d70fc155f526?cid=null"
+  "Previews/FlyingLotus_IntroACosmicDrama.wav"
+);
+var swampIsOn = new Song(
+  'Dr. Dog',
+  'Swamp Is On',
+  "Previews/DrDog_SwampIsOn.wav"
+);
+var softTrees = new Song(
+  'Trent Reznor and Atticus Ross',
+  'Soft Trees Break the Fall',
+  "Previews/TrentReznorandAtticusRoss_SoftTreesBreaktheFall.wav"
+);
+var conta = new Song(
+  'Alessandro Cortini',
+  'Conta',
+  "Previews/AlessandroCortini_Conta.wav"
+);
+var dd5 = new Song(
+  'Cut Copy',
+  'DD-5',
+  "Previews/CutCopy_DD-5.wav"
 );
 
 // mutedYe
 var hiking = new Song(
   'Mndsgn',
   'Hiking',
-  "https://p.scdn.co/mp3-preview/c19c90cb21dc0edf5543348d1e8ad3c5a4ed531d?cid=null"
+  "Previews/Mndsgn_Hiking.wav"
 );
-var feelItAllAround = new Song(
-  'Washed Out',
-  'Feel It All Around',
-  'Previews/WashedOut_FeelItAllAround.wav'
+var babe = new Song(
+  'Evenings',
+  'Babe',
+  "Previews/Evenings_Babe.wav"
 );
-var sunKing = new Song(
-  'The Beatles',
-  'Sun King',
-  'Previews/TheBeatles_SunKing_Remastered.wav'
+var brother = new Song(
+  'Mac Demarco',
+  'Brother',
+  "Previews/MacDemarco_Brother.wav"
 );
-var reallyLove = new Song(
-  "D'Angelo",
-  'Really Love',
-  "Previews/D'Angelo_ReallyLove.wav"
+var theBird = new Song(
+  'Anderson Paak',
+  'The Bird',
+  'Previews/AndersonPaak_TheBird.wav'
+);
+var park = new Song(
+  "D33J",
+  'Park',
+  "Previews/D33J_Park(TapeVersion).wav"
 );
 
 // mellows
-var starsKeepCalling = new Song(
-  'Mac DeMarco',
-  'The Stars Keep on Calling My Name',
-  "https://p.scdn.co/mp3-preview/91418fe5a85506cd6bc145e850d73a21585ac2bd?cid=null"
-);
 var noDestruction = new Song(
   'Foxygen',
   'No Destruction',
   'Previews/Foxygen_NoDestruction.wav'
+);
+var sonnet = new Song(
+  'Hundred Waters',
+  'Sonnet',
+  'Previews/HundredWaters_Sonnet.wav'
+);
+var pinkWhite = new Song(
+  'Frank Ocean',
+  'Pink + White',
+  'Previews/FrankOcean_PinkWhite.wav'
+);
+var overTheOcean = new Song(
+  'Here We Go Magic',
+  'Over The Ocean',
+  'Previews/HereWeGoMagic_OverTheOcean.wav'
+);
+var blueBoy = new Song(
+  'Mac Demarco',
+  'Blue Boy',
+  'Previews/MacDemarco_BlueBoy.wav'
 );
 
 // feels
