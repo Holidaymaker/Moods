@@ -1,94 +1,117 @@
-#shhhh { 
-    background-color: #426C99;
+
+.shhhh { 
+    background-image: url(svgs/shhhh.svg);
     color: #fff;
+    transition: .3s ease-in-out;
+
 }
 
-#mhmmmm { 
-    background-color: #FFADA9;
+.mhmmmm { 
+    background-image: url(svgs/mhmmmm.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#darkBlue { 
-    background-color: #0D3556;
+.darkBlue { 
+    background-image: url(svgs/darkBlue.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#dreamin { 
-    background-color: #7A1941;
+.dreamin { 
+    background-image: url(svgs/dreamin.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#mutedYe { 
-    background-color: #ADB7C1;
+.mutedYe { 
+    background-image: url(svgs/mutedYe.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#mellows { 
-    background-color: #DB413F;
+.mellows { 
+    background-image: url(svgs/mellows.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#feels { 
-    background-color: #E7D4FF;
+.feels { 
+    background-image: url(svgs/feels.svg);
     color: #000;
+    transition: .3s ease-in-out;
 }
 
-#terminallyChill { 
-    background-color: #154A25;
+.terminallyChill { 
+    background-image: url(svgs/terminallyChill.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#steadied { 
-    background-color: #FFFCE9;
+.steadied { 
+    background-image: url(svgs/steadied.svg);
     color: #000;
+    transition: .3s ease-in-out;
 }
 
-#schemin { 
-    background-color: #340054;
+.schemin { 
+    background: url(svgs/schemin.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#elevated { 
-    background-color: #FFE766;
+.elevated { 
+    background: url(svgs/elevated.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#groovin { 
-    background-color: #2C2A2D;
+.groovin { 
+    background-image: url(svgs/groovin.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#vibesForWeeks { 
-    background-color: #F9FA57;
+.vibesForWeeks { 
+    background-image: url(svgs/vibesForWeeks.svg);
+    background-size: cover;
     color: #000;
+    transition: .3s ease-in-out;
 }
 
-#stirThePot { 
-    background-color: #71777F;
+.stirThePot { 
+    background-image: url(svgs/stirThePot.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#upAndAway { 
-    background-color: #EA4900;
+.upAndAway { 
+    background-image: url(svgs/upAndAway.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#blurred { 
-    background-color: #AEB88D;
+.blurred { 
+    background-image: url(svgs/blurred.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#headDancin { 
-    background-color: #76FFCB;
+.headDancin { 
+    background-image: url(svgs/headDancin.svg);
+    background: fill;
     color: #000;
+    transition: .3s ease-in-out;
 }
 
-#twistTheKnife { 
-    background-color: #CC1500;
+.twistTheKnife { 
+    background-image: url(svgs/twistTheKnife.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
-#wooooo { 
-    background-color: #FF0086;
+.wooooo { 
+    background-image: url(svgs/wooooo.svg);
     color: #fff;
+    transition: .3s ease-in-out;
 }

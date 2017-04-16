@@ -2,8 +2,7 @@ body {
 	background-size: cover;
     height: 100%;
     width: 100%;
-    position: fixed;
-    background-color: #7ACA79;
+    position: relative;
 }
 
 #main {
@@ -70,7 +69,8 @@ p {
     align-items: center;
 }
 
-#plus, #minus {
+
+ #nextSong {
     height: 2.5em;
     width: 8em;
     border-radius: 3px;
@@ -86,45 +86,71 @@ p {
     margin-bottom: 1em;
     
     transition: all .3s .05s ease-in-out;
+     cursor: auto !important;
     
 
 }
-#plus:hover, #minus:hover {
+/*
+#plus:hover, #minus:hover  {
     letter-spacing: 5px;
     background-color: #63f9a4;
     color: #000;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
     font-weight: bolder;
     font-variant: small-caps;
+*/
 
-    
+#plus {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: black;
+    opacity: 0;
+    cursor: url(down.png), auto;
+    z-index: -5;
 }
+
+#minus {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    background: white;
+    opacity: 0;
+    cursor: url(up.png), auto;
+    z-index: -5;
+}
+    
+
 
 #spotify {
     height: 2.5em;
-    width: 8em;
-    border-radius: 3px;
-    background-color: #474747;
+    width: 10em;
+    border-radius: 1350px;
+    background-color: #63f9a4;
     color: #fff;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     font-variant: small-caps;
     text-align: center; 
     border: 0px;
+    margin: auto;
     transition: box-shadow .5s ease;
-    margin-top: 2em;
-    
     transition: all .3s .05s ease-in-out;
     
 }
 
-#spotify:hover {
+#spotify:hover, #nextSong:hover {
     background-color: #63f9a4;
     color: #000;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
     font-weight: bolder;
     font-variant: small-caps;
+    cursor: default;
 }
 
 button:active {
@@ -136,9 +162,9 @@ button:active {
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
     z-index: -10;
     animation: background 40s infinite ease-in-out;
-    
 }
 
 @keyframes background {
