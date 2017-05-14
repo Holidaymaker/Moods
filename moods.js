@@ -1,6 +1,6 @@
 // initializes moods array of Playlist objects
-var moods = [shhhh, mhmmmm, darkBlue, dreamin, mutedYe, mellows, feels,
-            terminallyChill, steadied, schemin, elevated, groovin, vibesForWeeks,
+var moods = [shhhh, morningTea, dreamin, darkBlue, feels, mutedYe, mellows,
+            terminallyChill, steadied, groovin, vibesForWeeks, schemin, elevated,
             stirThePot, upAndAway, blurred, headDancin, twistTheKnife, wooooo];
 
 // gives starting point of moods array (0-18 available)
