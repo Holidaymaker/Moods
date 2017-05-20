@@ -1,46 +1,53 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<!--Logistical Stuff-->
+<!--Logistical Stuff-->   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Moods"
     content="An interactive site to help you find music that fits your mood.">
-<!--Stylesheets-->
+<!--Our Stylesheets-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet", type="text/css", href="styles.css"/>
   <link rel="stylesheet", type="text/css", href="individualmoods.css"/>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"/>
+  <link rel="stylesheet", type="text/css", href="animate.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  
 <!--Getting jQuery-->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<!--Getting Adobe Fonts-->
-  <script src="https://use.typekit.net/ion5mud.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <!--Getting fonts-->
-  <style>
-    @import url(
-      'https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400,600,700,800');
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Ubuntu+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chonburi|Limelight|Nothing+You+Could+Do" rel="stylesheet">
   <title>Moodz</title>
 </head>
 <body id="hi">
-  <div id="second">
-  </div>
-  <div id="main">
-      <div class="content">
+    <div id="load">
+        <p id="welcome">Welcome to Moods.</p>
+        <p id="clickup">
+            Click or tap up here for more energetic music
+        </p>
+        <p id="clickdown">
+            Click or tap down here for less energetic music
+        </p>
+            </div>
+
+      <div class="col-12" id="list">
+        <div id="art">
+          <img id="cover">
+        </div>
         <h1 id="playlist"></h1>
+        <p id="description"></p>
+      </div>
+   <div class="buttons">
+      <button id="plus"></button>
+      <button id="minus"></button>
     </div>
-    <div class="buttons">
-      <button id="plus">up</button>
-      <button id="minus">down</button>
-      <button id="nextSong">next song</button>
-      <a id ="spotifyLink">
-          <button id="spotify">view playlist</button>
-      </a>
-    </div>
+    <div id="btndiv">
+        <button class="button" id="next"><a id="playlisturl">view playlist</a></button>  
   </div>
-  <script src="songs_mvp.js"></script>
-  <script src="playlists_mvp.js"></script>
+  <script src="songs.js"></script>
+  <script src="playlists.js"></script>
   <script src="moods.js"></script>
   <script src="animations.js"></script>
 </body>
