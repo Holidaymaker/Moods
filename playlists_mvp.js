@@ -1,5 +1,5 @@
 // Playlist constructor function, determines properties of playlist objects
-function Playlist(playlistName, songList, playlistURL) {
+function Playlist(playlistName, songList, playlistURL, cssClass, description, cover) {
   this.playlistName = playlistName;
   this.songList = songList;
   this.playlistURL = playlistURL;
