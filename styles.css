@@ -2,103 +2,60 @@ body {
 	background-size: cover;
     height: 100%;
     width: 100%;
-    position: relative;
 }
-
-#main {
-    width: 30%;
-    height: 50%;
+.content {
+    width: 100%;
     position: fixed;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 10%;
-    margin: auto; /*centers element*/
-    text-align: center;
-    border: 5px solid white;
 }
-
-#second {
-    
-}
-
-#second {
-    width: 100%; height: 100%;
-    /*background-size: 100% 200%;
-    background-image: linear-gradient(to bottom, #7ACA79 50%, black 50%);
-    -webkit-transition: background-position 1s;
-    -moz-transition: background-position 1s;
-    transition: background-position 1s;*/
-}
-
-#second:hover {
-    background-position: 0 -100%;
-}
-
-
-
-
 h1 {
-    font-size: 3em;
-    font-family: 'Playfair Display', serif;
+    width: 100%;
     text-align: center;
-    transition: all .5s .05s ease;
-    letter-spacing: 2px;
-    perspective: 700px;
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 35%;
+    left: 0;
+    font-family: 'Limelight', cursive;
 }
-
-h1:hover {
-    letter-spacing: 10px;
-}
-
 p {
-    font-family: 'ABeeZee';
-    font-variant: small-caps;
-}
-
-
-.buttons {
-    width: 20%;
-    text-align: center;
-    margin: auto;
-    padding: 1em;
-    font-family: 'playfair display', serif;
-    align-items: center;
-}
-
-
- #nextSong {
-    height: 2.5em;
-    width: 8em;
-    border-radius: 3px;
-    background-color: #474747;
-    color: #fff;
+    position: fixed;
+    top: 54%;
+    font-family: 'Ubuntu Mono';
+    padding-left: 3px;
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-variant: small-caps;
-    text-align: center; 
-    border: 0px;
-    transition: box-shadow .5s ease;
-    margin-bottom: 1em;
-    
-    transition: all .3s .05s ease-in-out;
-     cursor: auto !important;
-    
-
+    left: 0;
 }
-/*
-#plus:hover, #minus:hover  {
-    letter-spacing: 5px;
-    background-color: #63f9a4;
-    color: #000;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
-    font-weight: bolder;
-    font-variant: small-caps;
-*/
+
+#description {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 30%;
+    top: 65%;
+    left: 0;
+}
+#list {
+    width: 100%;
+}
+
+#cover {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 50%;
+    top: 25%;
+    left: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    transform: translateX(-50%);
+    
+    
+}
 
 #plus {
     height: 50%;
@@ -106,26 +63,25 @@ p {
     position: fixed;
     top: 0px;
     left: 0px;
-    background: black;
-    opacity: 0;
+    background-color: transparent;
     cursor: url(down.png), auto;
-    z-index: -5;
+    border-bottom: 3px solid white;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    animation: instructions 10s 0s 1;
+    animation-fill-mode: both;
+    
 }
-
 #minus {
     height: 50%;
     width: 100%;
     position: fixed;
     top: 50%;
     left: 0px;
-    background: white;
     opacity: 0;
     cursor: url(up.png), auto;
-    z-index: -5;
 }
-    
-
-
 #spotify {
     height: 2.5em;
     width: 10em;
@@ -141,9 +97,12 @@ p {
     margin: auto;
     transition: box-shadow .5s ease;
     transition: all .3s .05s ease-in-out;
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    
     
 }
-
 #spotify:hover, #nextSong:hover {
     background-color: #63f9a4;
     color: #000;
@@ -152,24 +111,132 @@ p {
     font-variant: small-caps;
     cursor: default;
 }
-
-button:active {
-    transform: scale(.97);
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, .1);
-}
-
-#Layer_1 {
+#btndiv {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
     position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: -10;
-    animation: background 40s infinite ease-in-out;
+    bottom: 25%;
+    animation: maincontent 10s 0s 1;
+    animation-fill-mode: both;
+    
+    
 }
 
-@keyframes background {
-    0% {transform:translateY(-900px);}
-    50% {transform:translateY(-500px);}
-    100% {transform:translateY(-900px);}
+#playlisturl, playlisturl:hover{
+    text-decoration: none;
+    color: white;
+}
+#list {
+    padding-left: 100px;
+    animation: maincontent 10s 0s 1;
+    animation-fill-mode: both;
+}
+.button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 160px;
+    height: 45px;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.1em;
+    transition: .5s;
+}
+#load {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+    animation: loadingbg 10s 0s 1;
+    animation-fill-mode: both;
+}
+
+#welcome {
+    width: 500px; 
+    left: 50%; 
+    top: 50%;
+    transform: translate(-17%, 0); 
+    position: absolute;
+    color: white;
+    animation: welcome 5s 0s 1;
+    animation-fill-mode: both;
+}
+
+#clickup, #clickdown {
+    width: 500px; 
+    left: 50%; 
+    transform: translate(-40%, 0); 
+    position: absolute;
+    color: white;
+    animation: instructions 10s 0s 1;
+    animation-fill-mode: both;
     
+}
+#clickup {
+    top: 25%;    
+}
+#clickdown {
+    top: 75%;
+}
+
+/*black background for loading page*/
+@keyframes loadingbg {
+    0% {opacity: 1;}
+    95% {opacity: 1}
+    100% {opacity: 0;}
+}
+
+/*welcome text*/
+@keyframes welcome {
+    0% {opacity: 1;}
+    95% {opacity:1;}
+    100% {opacity: 0;}
+}
+
+
+/*fading in instructions after welcome*/
+@keyframes instructions {
+    0% {opacity: 0;}
+    45% {opacity: 0;}
+    50% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+/*fading in border between top and bottom*/
+@keyframes buttonborder {
+    50% {
+        border-bottom: 3px solid white;
+    }   
+    90% {
+        border-bottom: 3px solid white;
+    }
+    100% {
+        border-bottom: none;
+    }
+    
+}
+
+@keyframes movetext {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(10px);}
+}
+
+/*fading in actual content*/
+@keyframes maincontent {
+    0%   {opacity: 0;}
+    90%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.animateimg {
+    animation: img .5s 0s 1;
+}
+
+@keyframes img {
+    0%   {height: 0px;}
+    100% {height: 300px;}
 }
