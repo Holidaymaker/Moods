@@ -1,117 +1,117 @@
 
 .shhhh { 
-    background-image: url(svgs/shhhh.svg);
+    background-color: #426C99;
     color: #fff;
     transition: .3s ease-in-out;
 
 }
 
 .mhmmmm { 
-    background-image: url(svgs/mhmmmm.svg);
+    background-color: #FFADA9;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .darkBlue { 
-    background-image: url(svgs/darkBlue.svg);
+    background-color: #0D3556;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .dreamin { 
-    background-image: url(svgs/dreamin.svg);
+    background-color: #7A1941;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .mutedYe { 
-    background-image: url(svgs/mutedYe.svg);
+    background-color: #ADB7C1;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .mellows { 
-    background-image: url(svgs/mellows.svg);
+    background-color: #DB413F; 
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .feels { 
-    background-image: url(svgs/feels.svg);
+    background-color: #E7D4FF;
     color: #000;
     transition: .3s ease-in-out;
 }
 
 .terminallyChill { 
-    background-image: url(svgs/terminallyChill.svg);
+    background-color: #154A25;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .steadied { 
-    background-image: url(svgs/steadied.svg);
+    background-color: #FFFCE9;
     color: #000;
     transition: .3s ease-in-out;
 }
 
 .schemin { 
-    background: url(svgs/schemin.svg);
+    background-color: #340054;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .elevated { 
-    background: url(svgs/elevated.svg);
+    background-color: #FFE766;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .groovin { 
-    background-image: url(svgs/groovin.svg);
+    background-color: #2C2A2D;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .vibesForWeeks { 
-    background-image: url(svgs/vibesForWeeks.svg);
+    background-color: #F9FA57;
     background-size: cover;
     color: #000;
     transition: .3s ease-in-out;
 }
 
 .stirThePot { 
-    background-image: url(svgs/stirThePot.svg);
+    background-color: #71777F;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .upAndAway { 
-    background-image: url(svgs/upAndAway.svg);
+    background-color: #EA4900;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .blurred { 
-    background-image: url(svgs/blurred.svg);
+    background-color: #AEB88D;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .headDancin { 
-    background-image: url(svgs/headDancin.svg);
+    background-color: #76FFCB;
     background: fill;
     color: #000;
     transition: .3s ease-in-out;
 }
 
 .twistTheKnife { 
-    background-image: url(svgs/twistTheKnife.svg);
+    background-color: #CC1500;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
 .wooooo { 
-    background-image: url(svgs/wooooo.svg);
+    background-color: #FF0086;
     color: #fff;
     transition: .3s ease-in-out;
 }
