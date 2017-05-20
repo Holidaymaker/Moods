@@ -60,9 +60,14 @@ function incrementPlaylist(incrementAmount) {
 }
 
 function setPlaylist() {
+  // sets album art
+  $("#cover").attr("src", moods[currentPlaylist].cover);
   // sets the playlist text
   document.getElementById('playlist').innerHTML =
     moods[currentPlaylist].playlistName;
+  // sets the description text
+  var description = document.getElementById('description');
+  description.innerHTML = moods[currentPlaylist].description;
     // sets song to play
     setSong();
     setClass();
